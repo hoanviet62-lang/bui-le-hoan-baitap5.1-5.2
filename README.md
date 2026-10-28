@@ -2,10 +2,10 @@
 
 ## THÔNG TIN SINH VIÊN
 - **Họ và tên:** Bùi Lê Hoàn
-- **Mã số sinh viên:**24810320040
+- **Mã số sinh viên:** 24810320040
 - **Lớp:** D19QTANM1
 - **Tên môn học:** Lập trình C# / Windows Forms
-- **Tên bài tập:** Bài 5.1 (Đăng nhập) & Bài 5.2 (Đăng ký học viên với MySQL)
+- **Tên bài tập:** Bài 5.1 (Đăng nhập) & Bài 5.2 (Đăng ký học viên)
 
 ---
 
@@ -14,23 +14,23 @@
 ### BÀI 5.1: FORM ĐĂNG NHẬP (QUẢN LÝ TÀI KHOẢN)
 
 #### 1. Ảnh màn hình Giao diện chính
-![Giao diện Bài 5.1](./screenshots/main_ui.png)
+![Giao diện Bài 5.1](./screenshots/bai5_1/main_ui.png)
 
 #### 2. Ảnh màn hình Chức năng thực thi / Kết quả
-![Kết quả Bài 5.1](./screenshots/execution_result.png)
+![Kết quả Bài 5.1](./screenshots/bai5_1/execution_result.png)
 
 #### 3. Ảnh màn hình Kiểm tra lỗi (Validation)
-![Kiểm tra lỗi Bài 5.1](./screenshots/validation_error.png)
+![Kiểm tra lỗi Bài 5.1](./screenshots/bai5_1/validation_error.png)
 
 ---
 
 ### BÀI 5.2: FORM ĐĂNG KÝ HỌC VIÊN
 
 #### 1. Ảnh màn hình Giao diện chính (Bài 5.2)
-![Giao diện Bài 5.2](./screenshots/bai5_2_main_ui.png)
+![Giao diện Bài 5.2](./screenshots/bai5_2/main_ui.png)
 
 #### 2. Ảnh màn hình Chức năng thực thi / Kết quả (Bài 5.2)
-![Kết quả Bài 5.2](./screenshots/bai5_2_execution.png)
+![Kết quả Bài 5.2](./screenshots/bai5_2/execution_result.png)
 
 #### 3. Ảnh màn hình Kiểm tra lỗi (Validation)
-![Kiểm tra lỗi Bài 5.2](./screenshots/bai5_2_validation.png)
+![Kiểm tra lỗi Bài 5.2](./screenshots/bai5_2/validation_error.png)
