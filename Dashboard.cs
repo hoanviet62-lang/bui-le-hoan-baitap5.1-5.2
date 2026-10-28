@@ -1,43 +1,54 @@
-#nullable disable
 using System;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace TechMartProductManager
+namespace baitap12_10
 {
-    public class FormDashboard : Form
+    public class Dashboard : Form
     {
-        private Button btnBai46 = new Button { Text = "Mở Bài 4.6: BindingSource & CSV Export", Location = new Point(40, 30), Size = new Size(320, 45), BackColor = Color.AliceBlue, Font = new Font("Segoe UI", 10, FontStyle.Bold) };
-        private Button btnBai47 = new Button { Text = "Mở Bài 4.7: Khung MDI & Đa cửa sổ", Location = new Point(40, 90), Size = new Size(320, 45), BackColor = Color.Honeydew, Font = new Font("Segoe UI", 10, FontStyle.Bold) };
-        private Button btnBai48 = new Button { Text = "Mở Bài 4.8: Async/Await & ProgressBar", Location = new Point(40, 150), Size = new Size(320, 45), BackColor = Color.LightYellow, Font = new Font("Segoe UI", 10, FontStyle.Bold) };
-        private Button btnExit = new Button { Text = "Thoát ứng dụng", Location = new Point(40, 220), Size = new Size(320, 40), BackColor = Color.MistyRose, Font = new Font("Segoe UI", 10, FontStyle.Bold) };
+        private Button btnBai51;
+        private Button btnBai52;
+        private Label lblTitle;
 
-        public FormDashboard()
+        public Dashboard()
         {
-            Text = "Dashboard Tổng hợp - Đồ án Windows Forms (Bài 4.6 - 4.8)";
-            Size = new Size(415, 330);
-            StartPosition = FormStartPosition.CenterScreen;
-            FormBorderStyle = FormBorderStyle.FixedSingle;
-            MaximizeBox = false;
+            InitializeComponent();
+        }
 
-            btnBai46.Click += (s, e) => {
-                FormBai4_6 frm = new FormBai4_6(); 
-                frm.ShowDialog();
+        private void InitializeComponent()
+        {
+            this.btnBai51 = new Button();
+            this.btnBai52 = new Button();
+            this.lblTitle = new Label();
+
+            this.Text = "Menu Bài Tập .NET - Quản Lý Học Viên";
+            this.Size = new Size(360, 260);
+            this.StartPosition = FormStartPosition.CenterScreen;
+
+            this.lblTitle.Text = "CHỌN BÀI TẬP THỰC HÀNH";
+            this.lblTitle.Font = new Font("Arial", 12, FontStyle.Bold);
+            this.lblTitle.Location = new Point(50, 30);
+            this.lblTitle.AutoSize = true;
+
+            this.btnBai51.Text = "Bài 5.1 - Đăng nhập";
+            this.btnBai51.Location = new Point(80, 80);
+            this.btnBai51.Size = new Size(180, 40);
+            this.btnBai51.Click += (sender, e) => {
+                Form5_1 f51 = new Form5_1();
+                f51.ShowDialog();
             };
 
-            btnBai47.Click += (s, e) => {
-                FormBai4_7 frm = new FormBai4_7();
-                frm.ShowDialog();
+            this.btnBai52.Text = "Bài 5.2 - Đăng ký học viên";
+            this.btnBai52.Location = new Point(80, 140);
+            this.btnBai52.Size = new Size(180, 40);
+            this.btnBai52.Click += (sender, e) => {
+                Form5_2 f52 = new Form5_2();
+                f52.ShowDialog();
             };
 
-            btnBai48.Click += (s, e) => {
-                FormBai4_8 frm = new FormBai4_8();
-                frm.ShowDialog();
-            };
-
-            btnExit.Click += (s, e) => Close();
-
-            Controls.AddRange(new Control[] { btnBai46, btnBai47, btnBai48, btnExit });
+            this.Controls.Add(this.lblTitle);
+            this.Controls.Add(this.btnBai51);
+            this.Controls.Add(this.btnBai52);
         }
     }
 }
